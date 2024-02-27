@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>About Organic Restaurant Sizen</title>
+      <link rel="icon" href="https://sizen-organic.com/wp-content/themes/sizen/images/favicon.ico">
+      <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+            <header class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Organic Restaurant Sizen">
+                </div>
+                <div class="booking">
+                    <a href="contact.html"><h2>BOOK NOW</h2></a>
+                </div>
+                <button class="hamburger-menu" id="js-hamburger-menu">
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                </button>
+                  <nav class="navigation">
+                    <ul class="navigation__list">
+                      <li class="navigation__list-item"><a href="index.html" class="navigation__link">HOME</a></li>
+                      <li class="navigation__list-item"><a href="about.html" class="navigation__link">About Sizen</a></li>
+                      <li class="navigation__list-item"><a href="menu.html" class="navigation__link">Menu</a></li>
+                      <li class="navigation__list-item"><a href="access.html" class="navigation__link">Access</a></li>
+                      <li class="navigation__list-item"><a href="contact.html" class="navigation__link">Book now</a></li>
+                      <li class="navigation__list-item"><a href="#" class="navigation__link"></a></li>
+                    </ul>
+                  </nav>
+            </header>
+        <main>
+            <div id="sizen">
+                <div id="sizen1">
+                    <h2>About Sizen</h2>
+                    <p>When I was in my 20s, I had the opportunity to meet many farmers in Miyazaki through work.
+                        Most of the farmers are married couples, and they all have very good relationships with each other
+                        and are all nice people. Is it possible that touching the earth and soil has a mysterious power 
+                        that cleanses your mind? That's what I thought.
+                        Many of the farmers I met did not use pesticides or chemical fertilizers,
+                        and they were intelligent and knowledgeable people,
+                        so they were able to put their hardships behind them and practice naturalfarming methods.
+                        was doing. However, to compensate for the labor involved in catching insects by hand,
+                        we were not adding value to the product, even though we were making something
+                        that was really good for the body. It's a shame that such a wonderful product is not known to many people!
+                        So, I thought it would be possible to add real value to the ingredients of farmers
+                        who have this belief and deliver them to consumers. At that time,
+                        I came across an offer to open a rest house at Heiwadai Park, a tourist destination in Miyazaki.
+                        Even though it was a tourist spot, it wasn't a very popular place,
+                        as I had only been there once on an excursion when I was a child.
+                        However, when I went there as an adult, I realized that it was a wonderful place full of nature,
+                        with a lush green forest where you could always hear the chirping of birds. Here too,
+                        I thought it was a waste that there were no people here.
+                        I suddenly had an idea!
+                        It would be so wonderful to create a restaurant in this lush green park
+                        where you can enjoy authentic food from your favorite farmers! and.
+                        This is the beginning of the story of organic restaurant sizen.</p>
+                </div>
+                <div id="img1"><img src="img/story_img1.jpg" alt=""></div>
+            </div>
+        </main>
+        <footer>
+            <div id="contact">
+                <div class="title-block">
+                    <img src="img/logo.png" alt="Organic Restaurant Sizen">
+                </div>
+                <div>
+                    <p>ADDRESS:〒880-0035
+                        宮崎県宮崎市下北方町越ケ迫6146　平和台公園レストハウス1F<br>
+                        TEL:0985-31-3693</P>
+                    <div>
+                        <h3>Follow us</h3>
+                        <ul id="sns"> 
+                            <li><a href="https://www.instagram.com/organic_restaurant_sizen/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/Organic.Restaurant.sizen">Facebook</a></li>
+                            <li><a href="https://twitter.com/sizen_organic">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="copyright"><small>copyright 2023 sizen Organic Restaurant INC.</small></p>
+            </div>
+        </footer>
+        
+        <script src="js/slideshow.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        
+        <script>
+            'use strict';
+
+            $(function () {
+            $('#js-hamburger-menu, .navigation__link').on('click', function () {
+                $('.navigation').slideToggle(500)
+                $('.hamburger-menu').toggleClass('hamburger-menu--open')
+            });
+            });
+            // $(document).ready(function(){
+            //     $('#open_nav').on('click', function(){
+            //         $('#wrapper, #nav').toggleClass('show');
+            //     })
+            // })
+        </script>
+    </body>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Access Organic Restaurant Sizen</title>
+      <link rel="icon" href="https://sizen-organic.com/wp-content/themes/sizen/images/favicon.ico">
+      <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+            <header class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Organic Restaurant Sizen">
+                </div>
+                <div class="booking">
+                    <a href="contact.html"><h2>BOOK NOW</h2></a>
+                </div>
+                <button class="hamburger-menu" id="js-hamburger-menu">
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                </button>
+                  <nav class="navigation">
+                    <ul class="navigation__list">
+                      <li class="navigation__list-item"><a href="index.html" class="navigation__link">HOME</a></li>
+                      <li class="navigation__list-item"><a href="about.html" class="navigation__link">About Sizen</a></li>
+                      <li class="navigation__list-item"><a href="menu.html" class="navigation__link">Menu</a></li>
+                      <li class="navigation__list-item"><a href="access.html" class="navigation__link">Access</a></li>
+                      <li class="navigation__list-item"><a href="contact.html" class="navigation__link">Book now</a></li>
+                      <li class="navigation__list-item"><a href="#" class="navigation__link"></a></li>
+                    </ul>
+                  </nav>
+            </header>
+        <main>
+            <div id="detail">
+                <h1>Access</h1>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.5113112825047!2d131.41338897513683!3d31.94702262593993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b0c55b540793%3A0x53c903ddf4ddccae!2z44Kq44O844Ks44OL44OD44Kv44Os44K544OI44Op44OzIHNpemVu!5e0!3m2!1sja!2sjp!4v1706668647840!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div id="hours">
+                        <h1>Openning Hours</h1>
+                        <p>Wednesday to Friday<br>LUNCH only<br>11:00~15:30</p>
+                        <p>Satuday & Sunday<br>DINNER only<br>17:30~21:00</p>
+                        <h1>Prices</h1>
+                        <p>Wednesday to Friday<br>Senior 1,780Yen<br>Adult 1,980Yen<br>Kid 1,280yen</p>
+                        <p>Satuday & Sunday<br>Senior 1,900Yen<br>Adult 2,100Yen<br>Kid 1,400yen</p>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <div id="contact">
+                <div class="title-block">
+                    <img src="img/logo.png" alt="Organic Restaurant Sizen">
+                </div>
+                <div>
+                    <p>ADDRESS:〒880-0035
+                        宮崎県宮崎市下北方町越ケ迫6146　平和台公園レストハウス1F<br>
+                        TEL:0985-31-3693</P>
+                    <div>
+                        <h3>Follow us</h3>
+                        <ul id="sns"> 
+                            <li><a href="https://www.instagram.com/organic_restaurant_sizen/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/Organic.Restaurant.sizen">Facebook</a></li>
+                            <li><a href="https://twitter.com/sizen_organic">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="copyright"><small>copyright 2023 sizen Organic Restaurant INC.</small></p>
+            </div>
+        </footer>
+        
+        <script src="js/slideshow.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        
+        <script>
+            'use strict';
+
+            $(function () {
+            $('#js-hamburger-menu, .navigation__link').on('click', function () {
+                $('.navigation').slideToggle(500)
+                $('.hamburger-menu').toggleClass('hamburger-menu--open')
+            });
+            });
+            
+        </script>
+    </body>
+

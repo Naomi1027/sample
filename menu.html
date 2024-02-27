@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Menu Organic Restaurant Sizen</title>
+      <link rel="icon" href="https://sizen-organic.com/wp-content/themes/sizen/images/favicon.ico">
+      <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Organic Restaurant Sizen">
+            </div>
+            <div class="booking">
+                <a href="contact.html"><h2>BOOK NOW</h2></a>
+            </div>
+            <button class="hamburger-menu" id="js-hamburger-menu">
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+            </button>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a href="index.html" class="navigation__link">HOME</a></li>
+                    <li class="navigation__list-item"><a href="about.html" class="navigation__link">About Sizen</a></li>
+                    <li class="navigation__list-item"><a href="menu.html" class="navigation__link">Menu</a></li>
+                    <li class="navigation__list-item"><a href="access.html" class="navigation__link">Access</a></li>
+                    <li class="navigation__list-item"><a href="contact.html" class="navigation__link">Book now</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__link"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="menu2">Menu</h2>
+            <div id="menu1">
+                <p>We mainly use organic and pesticide-free ingredients,
+                    and we are particular about seasonings, so even if you eat a full meal,
+                    you will feel light and leave no residue behind.
+                    We offer approximately 20 types of dishes and approximately 15 types of drinks.
+                    All drinks and herbal teas are handmade!
+                    You can also watch the food being prepared on the island kitchen,
+                    and no chemical seasonings or additives are used.
+                    This is a restaurant surrounded by greenery in a park where producers,
+                    staff, and customers connect.</p>
+                <div id="img2"><img src="img/story_img2.png" alt=""></div>
+            </div>
+        </main>
+        <footer>
+            <div id="contact">
+                <div class="title-block">
+                    <img src="img/logo.png" alt="Organic Restaurant Sizen">
+                </div>
+                <div>
+                    <p>ADDRESS:〒880-0035
+                        宮崎県宮崎市下北方町越ケ迫6146　平和台公園レストハウス1F<br>
+                        TEL:0985-31-3693</P>
+                    <div>
+                        <h3>Follow us</h3>
+                        <ul id="sns"> 
+                            <li><a href="https://www.instagram.com/organic_restaurant_sizen/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/Organic.Restaurant.sizen">Facebook</a></li>
+                            <li><a href="https://twitter.com/sizen_organic">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="copyright"><small>copyright 2023 sizen Organic Restaurant INC.</small></p>
+            </div>
+        </footer>
+        
+        <script src="js/slideshow.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        
+        <script>
+            'use strict';
+
+            $(function () {
+            $('#js-hamburger-menu, .navigation__link').on('click', function () {
+                $('.navigation').slideToggle(500)
+                $('.hamburger-menu').toggleClass('hamburger-menu--open')
+            });
+            });
+            // $(document).ready(function(){
+            //     $('#open_nav').on('click', function(){
+            //         $('#wrapper, #nav').toggleClass('show');
+            //     })
+            // })
+        </script>
+    </body>
+
